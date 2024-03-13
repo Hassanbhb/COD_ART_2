@@ -46,13 +46,13 @@
                             <div class="flex items-center">
                                 <a class="inline-block mr-9 text-sm font-semibold text-vermilion-500 hover:text-gray-900"
                                     href="login.html">Sign In</a>
-                                <a class="relative group inline-block py-3 px-4 text-sm font-semibold text-vermilion-500 hover:text-vermilion-50 bg-vermilion-50 rounded-md overflow-hidden transition duration-300"
-                                    href="login.html">
-                                    <div
-                                        class="absolute top-0 right-full w-full h-full bg-vermilion-500 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500">
-                                    </div>
-                                    <span class="relative">Create an account</span>
-                                </a>
+                                <x-ui.button 
+                                style="secondary" 
+                                size="md" 
+                                bg-hover="bg-vermilion-500" 
+                                class="rounded-lg">
+                                    Create an account
+                                </x-ui.button>
                             </div>
                         </div>
                     </div>
@@ -84,39 +84,29 @@
                                     fill="#1E2238"></path>
                             </svg>
                         </div>
-                        <div class="mb-8 lg:mb-0 lg:mr-8">
-                            <a class="relative group inline-block w-full sm:w-auto py-4 px-8 text-white font-semibold bg-vermilion-500 rounded-md overflow-hidden"
-                                href="#">
-                                <div
-                                    class="absolute top-0 right-full w-full h-full bg-gray-900 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500">
-                                </div>
-                                <div class="relative flex items-center justify-center">
-                                    <span class="mr-4">Start Selling</span>
-                                    <span>
-                                        <svg width="8" height="12" viewbox="0 0 8 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M6.83 5.29L2.59 1.05C2.49704 0.956274 2.38644 0.881879 2.26458 0.83111C2.14272 0.780342 2.01202 0.754204 1.88 0.754204C1.74799 0.754204 1.61729 0.780342 1.49543 0.83111C1.37357 0.881879 1.26297 0.956274 1.17 1.05C0.983753 1.23736 0.879211 1.49082 0.879211 1.755C0.879211 2.01919 0.983753 2.27264 1.17 2.46L4.71 6L1.17 9.54C0.983753 9.72736 0.879211 9.98082 0.879211 10.245C0.879211 10.5092 0.983753 10.7626 1.17 10.95C1.26344 11.0427 1.37426 11.116 1.4961 11.1658C1.61794 11.2155 1.7484 11.2408 1.88 11.24C2.01161 11.2408 2.14207 11.2155 2.26391 11.1658C2.38575 11.116 2.49656 11.0427 2.59 10.95L6.83 6.71C6.92373 6.61704 6.99813 6.50644 7.04889 6.38458C7.09966 6.26272 7.1258 6.13201 7.1258 6C7.1258 5.86799 7.09966 5.73728 7.04889 5.61543C6.99813 5.49357 6.92373 5.38297 6.83 5.29Z"
-                                                fill="#FFF2EE"></path>
-                                        </svg></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="flex items-center">
-                            <img class="w-10 h-10"
-                                src="{{ Vite::asset('resources/assets/images/headers/avatar4.png') }}"
-                                alt=""><img class="w-10 h-10 -ml-2"
-                                src="{{ Vite::asset('resources/assets/images/headers/avatar3.png') }}"
-                                alt=""><img class="w-10 h-10 -ml-2"
-                                src="{{ Vite::asset('resources/assets/images/headers/avatar2.png') }}"
-                                alt=""><img class="w-10 h-10 -ml-2"
-                                src="{{ Vite::asset('resources/assets/images/headers/avatar1.png') }}" alt="">
-                            <div class="p-px bg-white rounded-full -ml-2">
-                                <div class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200">
-                                    <span class="font-semibold">5K+</span>
+                        <x-ui.button 
+                            style="primary"  
+                            bg-hover="bg-gray-900"
+                            class="rounded-lg"
+                            icon="chevron-right">
+                            Get Started
+                        </x-ui-button>
+                            <div class="flex items-center">
+                                <img class="w-10 h-10"
+                                    src="{{ Vite::asset('resources/assets/images/headers/avatar4.png') }}"
+                                    alt=""><img class="w-10 h-10 -ml-2"
+                                    src="{{ Vite::asset('resources/assets/images/headers/avatar3.png') }}"
+                                    alt=""><img class="w-10 h-10 -ml-2"
+                                    src="{{ Vite::asset('resources/assets/images/headers/avatar2.png') }}"
+                                    alt=""><img class="w-10 h-10 -ml-2"
+                                    src="{{ Vite::asset('resources/assets/images/headers/avatar1.png') }}"
+                                    alt="">
+                                <div class="p-px bg-white rounded-full -ml-2">
+                                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200">
+                                        <span class="font-semibold">5K+</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
                 <div class="xl:flex">
@@ -426,29 +416,20 @@
                                     <p class="text-gray-900">Nunc et tellus non erat accumsan aliquam eget non mi.
                                         Integer fringilla pellentesque finibus.</p>
                                 </div>
-                                <div class="flex flex-wrap items-center justify-between">
-                                    <div class="w-full xs:w-auto mb-8 sm:mb-0 mr-4">
-                                        <span class="block text-3xl font-bold text-gray-900 leading-tight">Only
-                                            $50</span>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex-none flex flex-col xs:w-auto mb-8 sm:mb-0 mr-4">
+                                        <span class="text-3xl font-bold text-gray-900 leading-tight">
+                                            Only $50
+                                        </span>
                                         <span class="text-sm text-gray-500">for Silver package</span>
                                     </div>
-                                    <a class="relative group inline-block w-full sm:w-auto py-4 px-6 text-vermilion-50 font-semibold bg-vermilion-500 rounded-full overflow-hidden"
-                                        href="#">
-                                        <div
-                                            class="absolute top-0 right-full w-full h-full bg-gray-900 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500">
-                                        </div>
-                                        <div class="relative flex items-center justify-center">
-                                            <span class="mr-2">See our plans</span>
-                                            <span>
-                                                <svg width="13" height="13" viewbox="0 0 13 13"
-                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M12.9199 0.62C12.8185 0.375651 12.6243 0.181475 12.3799 0.0799999C12.2597 0.028759 12.1306 0.00157999 11.9999 0H1.99994C1.73472 0 1.48037 0.105357 1.29283 0.292893C1.1053 0.48043 0.999939 0.734784 0.999939 1C0.999939 1.26522 1.1053 1.51957 1.29283 1.70711C1.48037 1.89464 1.73472 2 1.99994 2H9.58994L1.28994 10.29C1.19621 10.383 1.12182 10.4936 1.07105 10.6154C1.02028 10.7373 0.994141 10.868 0.994141 11C0.994141 11.132 1.02028 11.2627 1.07105 11.3846C1.12182 11.5064 1.19621 11.617 1.28994 11.71C1.3829 11.8037 1.4935 11.8781 1.61536 11.9289C1.73722 11.9797 1.86793 12.0058 1.99994 12.0058C2.13195 12.0058 2.26266 11.9797 2.38452 11.9289C2.50638 11.8781 2.61698 11.8037 2.70994 11.71L10.9999 3.41V11C10.9999 11.2652 11.1053 11.5196 11.2928 11.7071C11.4804 11.8946 11.7347 12 11.9999 12C12.2652 12 12.5195 11.8946 12.707 11.7071C12.8946 11.5196 12.9999 11.2652 12.9999 11V1C12.9984 0.869323 12.9712 0.740222 12.9199 0.62V0.62Z"
-                                                        fill="#FFF2EE"></path>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </a>
+                                    <x-ui.button 
+                                    style="primary" 
+                                    bg-hover="bg-gray-900"
+                                    icon="arrow-trending-up"
+                                    class="flex-1">
+                                      See Our plans
+                                    </x-ui-button>
                                 </div>
                             </div>
                         </div>
@@ -531,28 +512,6 @@
                                 <span class="font-serif italic">said</span>
                             </h1>
                             <p class="text-gray-500">Risus viverra justo sagittis vestibulum metus.</p>
-                        </div>
-                        <div class="w-full lg:w-1/3 px-4">
-                            <div class="flex items-center justify-end">
-                                <a class="inline-flex mr-3 w-14 h-14 items-center justify-center rounded-full border border-gray-200 hover:border-vermilion-500 text-gray-600 hover:text-vermilion-500 transition duration-200"
-                                    href="#">
-                                    <svg width="12" height="14" viewbox="0 0 12 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.0799999 6.62C0.127594 6.49725 0.19896 6.38511 0.290001 6.29L5.29 1.29C5.38324 1.19676 5.49393 1.1228 5.61575 1.07234C5.73757 1.02188 5.86814 0.995911 6 0.995911C6.2663 0.995911 6.5217 1.1017 6.71 1.29C6.80324 1.38324 6.8772 1.49393 6.92766 1.61575C6.97812 1.73758 7.00409 1.86814 7.00409 2C7.00409 2.2663 6.8983 2.5217 6.71 2.71L3.41 6H11C11.2652 6 11.5196 6.10536 11.7071 6.2929C11.8946 6.48043 12 6.73479 12 7C12 7.26522 11.8946 7.51957 11.7071 7.70711C11.5196 7.89465 11.2652 8 11 8H3.41L6.71 11.29C6.80373 11.383 6.87812 11.4936 6.92889 11.6154C6.97966 11.7373 7.0058 11.868 7.0058 12C7.0058 12.132 6.97966 12.2627 6.92889 12.3846C6.87812 12.5064 6.80373 12.617 6.71 12.71C6.61704 12.8037 6.50644 12.8781 6.38458 12.9289C6.26272 12.9797 6.13201 13.0058 6 13.0058C5.86799 13.0058 5.73728 12.9797 5.61542 12.9289C5.49356 12.8781 5.38296 12.8037 5.29 12.71L0.290001 7.71C0.19896 7.6149 0.127594 7.50275 0.0799999 7.38C-0.0200176 7.13654 -0.0200176 6.86346 0.0799999 6.62Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                </a>
-                                <a class="inline-flex w-14 h-14 items-center justify-center rounded-full bg-vermilion-50 hover:bg-vermilion-100 text-vermilion-500 transition duration-200"
-                                    href="#">
-                                    <svg width="12" height="14" viewbox="0 0 12 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11.92 6.62C11.8724 6.49725 11.801 6.38511 11.71 6.29L6.71 1.29C6.61676 1.19676 6.50607 1.1228 6.38425 1.07234C6.26243 1.02188 6.13186 0.995911 6 0.995911C5.7337 0.995911 5.4783 1.1017 5.29 1.29C5.19676 1.38324 5.1228 1.49393 5.07234 1.61575C5.02188 1.73758 4.99591 1.86814 4.99591 2C4.99591 2.2663 5.1017 2.5217 5.29 2.71L8.59 6H1C0.734784 6 0.48043 6.10536 0.292893 6.2929C0.105357 6.48043 0 6.73479 0 7C0 7.26522 0.105357 7.51957 0.292893 7.70711C0.48043 7.89465 0.734784 8 1 8H8.59L5.29 11.29C5.19627 11.383 5.12188 11.4936 5.07111 11.6154C5.02034 11.7373 4.9942 11.868 4.9942 12C4.9942 12.132 5.02034 12.2627 5.07111 12.3846C5.12188 12.5064 5.19627 12.617 5.29 12.71C5.38296 12.8037 5.49356 12.8781 5.61542 12.9289C5.73728 12.9797 5.86799 13.0058 6 13.0058C6.13201 13.0058 6.26272 12.9797 6.38458 12.9289C6.50644 12.8781 6.61704 12.8037 6.71 12.71L11.71 7.71C11.801 7.6149 11.8724 7.50275 11.92 7.38C12.02 7.13654 12.02 6.86346 11.92 6.62Z"
-                                            fill="#FF460C"></path>
-                                    </svg>
-                                </a>
-                            </div>
                         </div>
                     </div>
                     <div class="flex flex-wrap -mx-4">
@@ -688,11 +647,11 @@
                 <div class="max-w-5xl mx-auto">
                     <div class="text-center mb-24">
                         <x-ui.badge size="sm">FREQUENTLY
-                          ASK QUESTION</x-badge>
-                        <h1 class="font-heading text-5xl xs:text-6xl md:text-7xl font-bold text-gray-900">
-                            <span>You ask? We</span>
-                            <span class="font-serif italic">answer</span>
-                        </h1>
+                            ASK QUESTION</x-badge>
+                            <h1 class="font-heading text-5xl xs:text-6xl md:text-7xl font-bold text-gray-900">
+                                <span>You ask? We</span>
+                                <span class="font-serif italic">answer</span>
+                            </h1>
                     </div>
                     <div class="pt-16 sm:pt-24 px-8 sm:px-20 pb-16 bg-white rounded-3xl shadow-lg">
                         <button
@@ -861,6 +820,7 @@
             </div>
         </section>
 
+        {{-- cta --}}
         <section class="py-20 md:py-24">
             <div class="container px-4 mx-auto">
                 <div
@@ -875,23 +835,10 @@
                             <span>Start your free trial</span>
                             <span class="font-serif italic">today!</span>
                         </h2>
-                        <a class="relative group inline-block w-full sm:w-auto py-4 px-6 text-vermilion-500 hover:text-white font-semibold bg-white rounded-md overflow-hidden transition duration-300"
-                            href="#">
-                            <div
-                                class="absolute top-0 right-full w-full h-full bg-gray-900 transform group-hover:translate-x-full group-hover:scale-110 transition duration-500">
-                            </div>
-                            <div class="relative flex items-center justify-center">
-                                <span class="mr-4">Get Started</span>
-                                <span>
-                                    <svg width="8" height="12" viewbox="0 0 8 12" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M6.83 5.28999L2.59 1.04999C2.49704 0.956266 2.38644 0.881872 2.26458 0.831103C2.14272 0.780334 2.01202 0.754196 1.88 0.754196C1.74799 0.754196 1.61729 0.780334 1.49543 0.831103C1.37357 0.881872 1.26297 0.956266 1.17 1.04999C0.983753 1.23736 0.879211 1.49081 0.879211 1.75499C0.879211 2.01918 0.983753 2.27263 1.17 2.45999L4.71 5.99999L1.17 9.53999C0.983753 9.72736 0.879211 9.98081 0.879211 10.245C0.879211 10.5092 0.983753 10.7626 1.17 10.95C1.26344 11.0427 1.37426 11.116 1.4961 11.1658C1.61794 11.2155 1.7484 11.2408 1.88 11.24C2.01161 11.2408 2.14207 11.2155 2.26391 11.1658C2.38575 11.116 2.49656 11.0427 2.59 10.95L6.83 6.70999C6.92373 6.61703 6.99813 6.50643 7.04889 6.38457C7.09966 6.26271 7.1258 6.13201 7.1258 5.99999C7.1258 5.86798 7.09966 5.73728 7.04889 5.61542C6.99813 5.49356 6.92373 5.38296 6.83 5.28999Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                </span>
-                            </div>
-                        </a>
+                        <x-ui.button style="white" size="lg" bg-hover="bg-gray-900" icon="chevron-right"
+                            class="rounded-lg">
+                            Get Started
+                        </x-ui.button>
                     </div>
                 </div>
             </div>
