@@ -2,6 +2,7 @@
     {{-- <img src="{{ Vite::asset('resources/assets/logos/logo-saturn-light.svg')}}" alt=""> --}}
     <div class="">
 
+        {{-- header --}}
         <section class="relative pb-20 xl:pb-32 overflow-hidden">
             <img class="absolute top-0 left-1/2 transform -translate-x-1/2 ml-24"
                 src="{{ Vite::asset('resources/assets/images/headers/center-orange-light.png') }}" alt="">
@@ -59,9 +60,9 @@
             </nav>
             <div class="relative container px-4 mx-auto">
                 <div class="lg:mb-32">
-                    <span
-                        class="inline-block py-2 px-5 mb-8 font-semibold text-vermilion-500 bg-vermilion-50 rounded-full"
-                        contenteditable="false">Making e-commerce easy!</span>
+                    <x-ui.badge size="lg">
+                        Making e-commerce easy!
+                    </x-ui.badge>
                     <div class="relative">
                         <h1
                             class="font-heading text-5xl xs:text-6xl md:text-8xl xl:text-9xl font-bold text-gray-900 mb-8 sm:mb-14">
@@ -72,7 +73,7 @@
                             your Cash on Delivery orders in one place, from leads management to order confirmation and
                             shipping</p>
                         <img class="hidden lg:block absolute bottom-0 right-0 -mb-6"
-                            src="{{ Vite::asset('resources/assets/images/headers/small-image.png')}}" alt="">
+                            src="{{ Vite::asset('resources/assets/images/headers/small-image.png') }}" alt="">
                     </div>
                     <div class="lg:flex items-center">
                         <div class="mb-10 lg:mb-0 lg:mr-10">
@@ -466,9 +467,7 @@
                     <div class="flex flex-wrap -mx-4 mb-24 items-end">
                         <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
                             <div class="max-w-md md:max-w-lg">
-                                <span
-                                    class="inline-block py-1 px-3 mb-5 text-xs font-semibold text-vermilion-500 bg-vermilion-50 rounded-full">PRODUCT
-                                    OVERVIEW</span>
+                                <x-ui.badge size="sm">PRODUCT OVERVIEW</x-ui.badge>
                                 <h1 class="font-heading text-5xl xs:text-6xl md:text-7xl font-bold">
                                     <span>Build</span>
                                     <span class="font-serif italic">Exclusively</span>
@@ -518,6 +517,7 @@
             </div>
         </section>
 
+        {{-- testimonials --}}
         <section class="relative py-20 lg:pt-32 lg:pb-36 bg-gray-50 overflow-hidden">
             <img class="absolute top-0 right-0 mt-6 -mr-24 md:-mr-0"
                 src="{{ Vite::asset('resources/assets/images/testimonials/circle-star-bg.svg') }}" alt="">
@@ -525,8 +525,7 @@
                 <div class="max-w-7xl mx-auto">
                     <div class="flex flex-wrap -mx-4 items-center mb-16">
                         <div class="w-full lg:w-2/3 px-4 mb-12 lg:mb-0">
-                            <span
-                                class="inline-block py-1 px-3 mb-4 text-xs font-semibold text-vermilion-500 bg-vermilion-50 rounded-full">TESTIMONIALS</span>
+                            <x-ui.badge size="sm">TESTIMONIALS</x-ui.badge>
                             <h1 class="font-heading text-4xl xs:text-6xl font-bold text-gray-900 mb-4">
                                 <span>What our clients</span>
                                 <span class="font-serif italic">said</span>
@@ -679,6 +678,7 @@
             </div>
         </section>
 
+        {{-- faq --}}
         <section class="relative py-20 overflow-hidden bg-gray-50">
             <img class="absolute top-0 left-0 mt-44"
                 src="{{ Vite::asset('resources/assets/images/faq/light-blue-left.png') }}" alt="">
@@ -687,9 +687,8 @@
             <div class="relative container px-4 mx-auto">
                 <div class="max-w-5xl mx-auto">
                     <div class="text-center mb-24">
-                        <span
-                            class="inline-block py-1 px-3 mb-4 text-xs font-semibold text-vermilion-500 bg-vermilion-50 rounded-full">FREQUENTLY
-                            ASK QUESTION</span>
+                        <x-ui.badge size="sm">FREQUENTLY
+                          ASK QUESTION</x-badge>
                         <h1 class="font-heading text-5xl xs:text-6xl md:text-7xl font-bold text-gray-900">
                             <span>You ask? We</span>
                             <span class="font-serif italic">answer</span>
