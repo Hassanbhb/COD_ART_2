@@ -45,7 +45,7 @@
                         <div class="hidden xl:block ml-auto">
                             <div class="flex items-center">
                                 <a class="inline-block mr-9 text-sm font-semibold text-vermilion-500 hover:text-gray-900"
-                                    href="login.html">Sign In</a>
+                                    href="{{ route('login') }}">Sign In</a>
                                 <x-ui.button 
                                 style="secondary" 
                                 size="md" 
