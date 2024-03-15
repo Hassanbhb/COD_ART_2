@@ -1,4 +1,4 @@
-<x-layouts.masterLayout title="COD ART">
+<x-layouts.landingLayout title="COD ART">
     {{-- <img src="{{ Vite::asset('resources/assets/logos/logo-saturn-light.svg')}}" alt=""> --}}
     <div class="">
 
@@ -12,52 +12,9 @@
                 src="{{ Vite::asset('resources/assets/images/headers/star-background-header.png') }}" alt="">
             <img class="hidden sm:block lg:hidden absolute top-1/2 w-64 sm:w-auto right-0 -mt-20 mr-5"
                 src="{{ Vite::asset('resources/assets/images/headers/small-image.png') }}" alt="">
-            <nav class="relative py-6 mb-12 md:mb-24 bg-transparent z-50">
-                <div class="container px-4 mx-auto">
-                    <div class="flex items-center relative">
-                        <a class="inline-block text-lg font-bold" href="#">
-                            <img class="h-10" src="{{ Vite::asset('resources/assets/logos/logo-saturn-dark.svg') }}"
-                                alt="" width="auto"></a>
-                        <div class="xl:hidden ml-auto">
-                            <button
-                                class="navbar-burger flex w-12 h-12 items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-md transition duration-200">
-                                <svg width="24" height="24" viewbox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M3 12H21" stroke="black" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"></path>
-                                    <path d="M3 6H21" stroke="black" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"></path>
-                                    <path d="M3 18H21" stroke="black" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"></path>
-                                </svg></button>
-                        </div>
-                        <ul
-                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden xl:flex lg:w-auto lg:space-x-12">
-                            <li><a class="inline-block text-sm text-gray-900 hover:text-vermilion-500 font-medium"
-                                    href="#features">Features</a></li>
-                            <li><a class="inline-block text-sm text-gray-900 hover:text-vermilion-500 font-medium"
-                                    href="#about">About Us</a></li>
-                            <li><a class="inline-block text-sm text-gray-900 hover:text-vermilion-500 font-medium"
-                                    href="#reviews">Reviews</a></li>
-                            <li><a class="inline-block text-sm text-gray-900 hover:text-vermilion-500 font-medium"
-                                    href="#faq">FAQ</a></li>
-                        </ul>
-                        <div class="hidden xl:block ml-auto">
-                            <div class="flex items-center">
-                                <a class="inline-block mr-9 text-sm font-semibold text-vermilion-500 hover:text-gray-900"
-                                    href="{{ route('login') }}">Sign In</a>
-                                <x-ui.button 
-                                style="secondary" 
-                                size="md" 
-                                bg-hover="bg-vermilion-500" 
-                                class="rounded-lg">
-                                    Create an account
-                                </x-ui.button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+
+            <x-navbar />
+
             <div class="relative container px-4 mx-auto">
                 <div class="lg:mb-32">
                     <x-ui.badge size="lg">
@@ -84,13 +41,9 @@
                                     fill="#1E2238"></path>
                             </svg>
                         </div>
-                        <x-ui.button 
-                            style="primary"  
-                            bg-hover="bg-gray-900"
-                            class="rounded-lg"
-                            icon="chevron-right">
+                        <x-ui.button style="primary" bg-hover="bg-gray-900" class="rounded-lg mr-8" icon="chevron-right">
                             Get Started
-                        </x-ui-button>
+                            </x-ui-button>
                             <div class="flex items-center">
                                 <img class="w-10 h-10"
                                     src="{{ Vite::asset('resources/assets/images/headers/avatar4.png') }}"
@@ -423,13 +376,10 @@
                                         </span>
                                         <span class="text-sm text-gray-500">for Silver package</span>
                                     </div>
-                                    <x-ui.button 
-                                    style="primary" 
-                                    bg-hover="bg-gray-900"
-                                    icon="arrow-trending-up"
-                                    class="flex-1">
-                                      See Our plans
-                                    </x-ui-button>
+                                    <x-ui.button style="primary" bg-hover="bg-gray-900" icon="arrow-trending-up"
+                                        class="flex-1">
+                                        See Our plans
+                                        </x-ui-button>
                                 </div>
                             </div>
                         </div>
@@ -843,43 +793,5 @@
                 </div>
             </div>
         </section>
-
-        {{-- footer --}}
-        <section class="relative py-20 overflow-hidden">
-            <img class="absolute top-0 left-0"
-                src="{{ Vite::asset('resources/assets/images/footers/blue-light-left.png') }}" alt="">
-            <img class="absolute bottom-0 left-1/2"
-                src="{{ Vite::asset('resources/assets/images/footers/vermilion-light-bottom.png') }}" alt="">
-            <div class="relative container px-4 mx-auto">
-                <div class="max-w-7xl mx-auto">
-                    <div class="pb-8 mb-14 border-b border-gray-100 text-center">
-                        <a class="inline-block" href="#">
-                            <img class="h-15"
-                                src="{{ Vite::asset('resources/assets/logos/logo-saturn-dark.svg') }}"
-                                alt="">
-                        </a>
-                    </div>
-                    <div class="flex flex-wrap -mb-5 -mx-6 items-center justify-center">
-                        <div class="px-6 mb-5"><a class="inline-block text-gray-900 hover:text-gray-600"
-                                href="#">Product</a></div>
-                        <div class="px-6 mb-5"><a class="inline-block text-gray-900 hover:text-gray-600"
-                                href="#">Features</a></div>
-                        <div class="px-6 mb-5"><a class="inline-block text-gray-900 hover:text-gray-600"
-                                href="#">Pricing</a></div>
-                        <div class="px-6 mb-5"><a class="inline-block text-gray-900 hover:text-gray-600"
-                                href="#">Resources</a></div>
-                        <div class="px-6 mb-5"><a class="inline-block text-gray-900 hover:text-gray-600"
-                                href="#">Careers</a></div>
-                        <div class="px-6 mb-5"><a class="inline-block text-gray-900 hover:text-gray-600"
-                                href="#">Help</a></div>
-                        <div class="px-6 mb-5"><a class="inline-block text-gray-900 hover:text-gray-600"
-                                href="#">Privacy</a></div>
-                    </div>
-                    <div class="mt-14 text-center">
-                        <span class="text-gray-500">© 2023 saturn. All rights reserved.</span>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
-</x-layouts.masterLayout>
+</x-layouts.landingLayout>
