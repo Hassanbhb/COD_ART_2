@@ -23,11 +23,11 @@
                     <div class="relative">
                         <h1
                             class="font-heading text-5xl xs:text-6xl md:text-8xl xl:text-9xl font-bold text-gray-900 mb-8 sm:mb-14">
-                            <span>Build an online business</span>
-                            <span class="font-serif italic">Today</span>
+                            <span>Start your ecommerce journey</span>
+                            <span class="font-serif italic">with less</span>
                         </h1>
                         <p class="text-gray-900 font-semibold mb-5 w-1/2" contenteditable="false">Comfortably manage
-                            your Cash on Delivery orders in one place, from leads management to order confirmation and
+                            your Cash on Delivery orders in one place, from affiliates management to order confirmation and
                             shipping</p>
                         <img class="hidden lg:block absolute bottom-0 right-0 -mb-6"
                             src="{{ Vite::asset('resources/assets/images/headers/small-image.png') }}" alt="">
@@ -41,7 +41,7 @@
                                     fill="#1E2238"></path>
                             </svg>
                         </div>
-                        <x-ui.button style="primary" bg-hover="bg-gray-900" class="rounded-lg mr-8" icon="chevron-right">
+                        <x-ui.button href="{{ route('login') }}" style="primary" bg-hover="bg-gray-900" class="rounded-lg mr-8" icon="chevron-right">
                             Get Started
                             </x-ui-button>
                             <div class="flex items-center">
@@ -62,6 +62,7 @@
                             </div>
                     </div>
                 </div>
+                {{-- partners --}}
                 <div class="xl:flex">
                     <div class="max-w-2xl mb-12 xl:mb-0 xl:mr-auto">
                         <span class="block mb-6 text-sm font-semibold text-gray-500">OUR PARTNERS</span>
