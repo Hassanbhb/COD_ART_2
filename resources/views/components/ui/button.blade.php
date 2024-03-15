@@ -34,7 +34,7 @@
             </span>
 
             @isset($icon)
-                <span class="ml-4">
+                <span class="ltr:ml-4 rtl:mr-4">
                     <x-ui.icon :name="$icon" />
                 </span>
             @endisset
