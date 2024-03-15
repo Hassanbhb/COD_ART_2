@@ -54,7 +54,7 @@
                                 </div>
                                 <div class="flex-1 cursor-pointer">
                                     <p class="step-3-btn py-3 w-full h-full flex justify-center items-center">
-                                        Step One</p>
+                                        Step Three</p>
                                 </div>
                             </div>
                             <form action="">
@@ -313,10 +313,12 @@
         const go_to_step_3 = document.querySelector('.go-to-step-3');
 
         go_to_step_2.addEventListener('click', () => {
+            change_step_color(2)
             show_next_step(2)
         })
 
         go_to_step_3.addEventListener('click', () => {
+            change_step_color(3)
             show_next_step(3)
         })
 
