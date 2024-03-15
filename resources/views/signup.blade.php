@@ -267,8 +267,8 @@
                                 <div class="text-center">
                                     <span class="text-xs font-semibold text-gray-900">
                                         <span>Already have an account?</span>
-                                        <a class="inline-block ml-1 text-vermilion-900 hover:text-vermilion-700"
-                                            href="login.html">Login</a>
+                                        <a class="inline-block ml-1 text-vermilion-500 hover:text-vermilion-700"
+                                            href="{{ route('login') }}">Login</a>
                                     </span>
                                 </div>
                             </form>
