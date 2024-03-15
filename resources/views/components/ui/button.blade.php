@@ -16,8 +16,10 @@
 
 @endphp
 
-<div class="mb-8 lg:mb-0 lg:mr-8">
-    <a href="{{ $href }}"
+<div class="mb-8 lg:mb-0">
+    <a @isset($href)
+            href="{{ $href }}"
+        @endisset
         {{ $attributes->merge(['class' => "relative group inline-block w-full sm:w-auto font-semibold rounded-full overflow-hidden $buttonStyles $buttonSizes transition duration-300"]) }}>
 
         <div @class([
