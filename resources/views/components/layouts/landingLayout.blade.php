@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="rtl">
 
-        <title>{{ $title }}</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        @vite('resources/css/app.css', 'resources/js/app.js')
-    </head>
-    <body class="antialiased">
+    <title>{{ $title }}</title>
 
-        {{ $slot }}
+    @vite('resources/css/app.css', 'resources/js/app.js')
+</head>
 
-        <x-footer />
-    </body>
+<body class="antialiased">
+
+    {{ $slot }}
+
+    <x-footer />
+</body>
+
 </html>
