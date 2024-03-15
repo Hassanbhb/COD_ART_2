@@ -16,7 +16,7 @@
 
 @endphp
 
-<div class="mb-8 lg:mb-0">
+<div class="mb-8 lg:mb-0 hover:cursor-pointer">
     <a @isset($href)
             href="{{ $href }}"
         @endisset
