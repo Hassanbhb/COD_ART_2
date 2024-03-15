@@ -17,7 +17,7 @@
                                         <h4
                                             class="font-heading text-3xl sm:text-5xl lg:text-6xl text-white font-bold mb-8">
                                             Sign in to your account</h4>
-                                        <div class="md:flex mb-20">
+                                        <div class="md:flex rtl:md:flex-row-reverse mb-20">
                                             <div class="mb-6 md:mb-0 md:mr-8 pt-3 text-gray-600">
                                                 <svg width="84" height="10" viewbox="0 0 84 10" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -62,17 +62,15 @@
                                             <input
                                                 class="w-full py-3 px-4 text-sm text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg"
                                                 type="password" placeholder="Enter your password">
-                                            <button
-                                                class="absolute top-1/2 right-0 mr-3 transform -translate-y-1/2 inline-block hover:scale-110 transition duration-100">
-                                                <img src="{{ Vite::asset('resources/assets/images/sign-up/icon-eye.svg') }}"
-                                                    alt="">
-                                            </button>
                                         </div>
                                     </div>
-                                    <div class="flex mb-6 items-center">
-                                        <input type="checkbox" value="" id="">
-                                        <label class="ml-2 text-xs text-gray-800" for="">Remember for 30
-                                            days</label>
+                                    <div class="flex items-center mb-8">
+                                        <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                            class="w-4 h-4 text-vermilion-600 bg-gray-100 border-gray-300 focus:ring-vermilion-500 dark:focus:ring-vermilion-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="default-radio-1"
+                                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                            Remember me?
+                                        </label>
                                     </div>
                                     <x-ui.button style="primary" size="sm" bg-hover="bg-gray-900" class="!w-full">
                                         Login
@@ -80,7 +78,7 @@
                                         <div class="text-center">
                                             <span class="text-xs font-semibold text-gray-900">
                                                 <span>Don’t have an account?</span>
-                                                <a class="inline-block ml-1 text-vermilion-500 hover:text-vermilion-700"
+                                                <a class="mx-2 inline-block ml-1 text-vermilion-500 hover:text-vermilion-700"
                                                     href="{{ route('signup') }}">Sign up</a>
                                             </span>
                                         </div>

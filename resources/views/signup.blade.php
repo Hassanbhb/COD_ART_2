@@ -16,7 +16,7 @@
                                 <div class="max-w-md mx-auto">
                                     <h4 class="font-heading text-3xl sm:text-5xl lg:text-6xl text-white font-bold mb-8"
                                         contenteditable="false">Create your account</h4>
-                                    <div class="md:flex mb-20">
+                                    <div class="md:flex rtl:md:flex-row-reverse mb-20">
                                         <div class="mb-6 md:mb-0 md:mr-8 pt-3 text-gray-600">
                                             <svg width="84" height="10" viewbox="0 0 84 10" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -26,8 +26,7 @@
                                             </svg>
                                         </div>
                                         <div>
-                                            <p class="text-lg font-semibold text-gray-200">Greetings on your
-                                                return! We kindly request you to enter your details.</p>
+                                            <p class="text-lg font-semibold text-gray-200">Start your jouney! We kindly request you to enter your details.</p>
                                         </div>
                                     </div>
 
@@ -95,7 +94,7 @@
                                                 <option>Option 3</option>
                                                 <option>Option 4</option>
                                             </select>
-                                            
+
                                         </div>
                                     </div>
                                     <div class="mb-6">
