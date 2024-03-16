@@ -1,11 +1,12 @@
 <x-layouts.landingLayout title="COD ART - Sign Up">
 
     <section class="relative pt-8 pb-12 md:pb-24 overflow-hidden">
-        <img class="absolute top-0 left-0 md:ml-20" src="{{ Vite::asset('resources/assets/sign-up/shadow-light-top.png')}}" alt="">
-        <div class="relative container px-4 mx-auto">
+        <img class="absolute top-0 left-0 md:ml-20"
+            src="{{ Vite::asset('resources/assets/sign-up/shadow-light-top.png') }}" alt="">
+        <div class="relative container max-w-7xl px-4 mx-auto">
             <div>
-                <a class="inline-block mx-auto mb-8" href="{{ route('home')}}">
-                    <img class="h-8" src="{{ Vite::asset('resources/assets/logos/aurora-logo.svg')}}" alt="">
+                <a class="inline-block mx-auto mb-8" href="{{ route('home') }}">
+                    <img class="h-8" src="{{ Vite::asset('resources/assets/logos/aurora-logo.svg') }}" alt="">
                 </a>
                 <div class="max-w-sm mx-auto">
                     <div class="text-center">
