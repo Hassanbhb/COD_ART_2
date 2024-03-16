@@ -1,94 +1,72 @@
 <x-layouts.landingLayout title="COD ART - Login">
-    <div class="">
-        <x-navbar />
-
-        <section class="relative py-20 2xl:py-10 overflow-hidden">
-            <div class="container px-4 mx-auto">
-                <div class="max-w-7xl mx-auto">
-                    <div class="flex flex-wrap -mx-4">
-                        <div class="w-full lg:w-1/2 px-4 order-last lg:order-first">
-                            <div class="relative max-w-lg mx-auto lg:mx-0 lg:max-w-2xl h-full">
-                                <img class="block w-full h-142 sm:h-full object-cover rounded-5xl"
-                                    src="{{ Vite::asset('resources/assets/images/sign-up/dark-background.png') }}"
-                                    alt="">
-                                <div
-                                    class="absolute bottom-0 w-full left-0 h-full flex items-center justify-center p-10">
-                                    <div class="max-w-md mx-auto">
-                                        <h4
-                                            class="font-heading text-3xl sm:text-5xl lg:text-6xl text-white font-bold mb-8">
-                                            Sign in to your account</h4>
-                                        <div class="md:flex rtl:md:flex-row-reverse mb-20">
-                                            <div class="mb-6 md:mb-0 md:mr-8 pt-3 text-gray-600">
-                                                <svg width="84" height="10" viewbox="0 0 84 10" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M1 4.25C0.585786 4.25 0.25 4.58579 0.25 5C0.25 5.41421 0.585786 5.75 1 5.75L1 4.25ZM84 5.00001L76.5 0.669879L76.5 9.33013L84 5.00001ZM1 5.75L77.25 5.75001L77.25 4.25001L1 4.25L1 5.75Z"
-                                                        fill="#FAFBFC"></path>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <p class="text-lg font-semibold text-gray-200">
-                                                    Welcome! We kindly request you to enter your details.</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
-                            <div class="max-w-lg lg:pt-8 2xl:pt-24 lg:pb-8 mx-auto 2xl:mr-0">
-                                <h3 class="text-5xl sm:text-6xl text-gray-900 font-bold mb-4">Welcome !</h3>
-                                <p class="text-lg text-gray-500 mb-14">
-                                    See our software in action with the demo version.
-                                </p>
-
-                                <form action="">
-                                    <div class="mb-6">
-                                        <label class="block mb-1.5 text-sm text-gray-900 font-semibold"
-                                            for="">Email</label>
-                                        <input
-                                            class="w-full py-3 px-4 text-sm text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg"
-                                            type="email" placeholder="pat@saturn.dev">
-                                    </div>
-                                    <div class="mb-7">
-                                        <div class="flex mb-1.5 items-center justify-between">
-                                            <label class="block text-sm text-gray-900 font-semibold"
-                                                for="">Password</label>
-                                            <a class="inline-block text-xs font-semibold text-vermilion-500 hover:text-gray-900"
-                                                href="#">Forget password?</a>
-                                        </div>
-                                        <div class="relative">
-                                            <input
-                                                class="w-full py-3 px-4 text-sm text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-purple-500 focus:outline-purple rounded-lg"
-                                                type="password" placeholder="Enter your password">
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center mb-8">
-                                        <input id="default-radio-1" type="radio" value="" name="default-radio"
-                                            class="w-4 h-4 text-vermilion-600 bg-gray-100 border-gray-300 focus:ring-vermilion-500 dark:focus:ring-vermilion-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <label for="default-radio-1"
-                                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                            Remember me?
-                                        </label>
-                                    </div>
-                                    <x-ui.button style="primary" size="sm" bg-hover="bg-gray-900" class="!w-full">
-                                        Login
-                                        </x-ui-button>
-                                        <div class="text-center">
-                                            <span class="text-xs font-semibold text-gray-900">
-                                                <span>Don’t have an account?</span>
-                                                <a class="mx-2 inline-block ml-1 text-vermilion-500 hover:text-vermilion-700"
-                                                    href="{{ route('signup') }}">Sign up</a>
-                                            </span>
-                                        </div>
-                                </form>
-                            </div>
-                        </div>
+    <section class="relative pt-8 pb-12 md:pb-24 overflow-hidden">
+        <img class="absolute top-0 left-0 z-0 md:ml-20"
+            src="{{ Vite::asset('resources/assets/sign-up/shadow-light-top.png') }}" alt="">
+        <div class="relative container max-w-7xl px-4 mx-auto">
+            <div>
+                <a class="inline-block mx-auto mb-8" href="{{ route('home') }}">
+                    <img class="h-8" src="{{ Vite::asset('resources/assets/logos/aurora-logo.svg') }} " alt="">
+                </a>
+                <div class="max-w-sm mx-auto">
+                    <div class="text-center">
+                        <h3 class="font-heading tracking-tight text-4xl font-bold mb-4">Login</h3>
+                        <p class="text-gray-500 mb-8">Welcome back! Please enter your details.</p>
                     </div>
+                    <form action="">
+                        <div class="mb-8">
+                            <label class="block mb-2 text-sm font-medium" for="">Email</label>
+                            <input
+                                class="py-2 px-4 h-11 w-full text-gray-500 placeholder-gray-500 bg-white border border-gray-200 focus:border-yellowGreen-500 rounded-lg shadow-sm outline-none ring ring-transparent focus:ring-yellowGreen-500"
+                                type="email" placeholder="Enter your email address">
+                        </div>
+                        <div class="mb-2">
+                            <label class="block mb-2 text-sm font-medium" for="">Password</label>
+                            <div class="relative">
+                                <input
+                                    class="relative py-2 px-4 h-11 w-full text-gray-500 placeholder-gray-500 bg-white border border-gray-200 focus:border-yellowGreen-500 rounded-lg shadow-sm outline-none ring ring-transparent focus:ring-yellowGreen-500"
+                                    type="password" placeholder="Enter password">
+                                <button
+                                    class="absolute top-1/2 right-0 mr-3 transform -translate-y-1/2 inline-block focus:outline-none text-gray-500 hover:text-yellowGreen-600">
+                                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.5 10.8334C5.5 4.16671 14.5 4.16671 17.5 10.8334"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path
+                                            d="M10 14.1666C8.61929 14.1666 7.5 13.0473 7.5 11.6666C7.5 10.2859 8.61929 9.16663 10 9.16663C11.3807 9.16663 12.5 10.2859 12.5 11.6666C12.5 13.0473 11.3807 14.1666 10 14.1666Z"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="text-right mb-8"><a
+                                class="inline-block text-sm font-semibold text-yellowGreen-700 hover:text-yellowGreen-600"
+                                href="#">Forgot Password?</a></div>
+                        <button
+                            class="group relative flex items-center justify-center px-5 h-12 w-full font-bold text-white bg-gradient-to-br from-cyanGreen-800 to-cyan-800 rounded-lg transition-all duration-300 focus:outline-none"
+                            type="submit">
+                            <div
+                                class="absolute top-0 left-0 w-full h-full rounded-lg ring ring-green-300 animate-pulse group-hover:ring-0 transition duration-300">
+                            </div>
+                            <span>Login</span>
+                        </button>
+                        <div class="my-4 flex items-center pt-20">
+                            <div class="h-px w-full bg-gray-200"></div>
+                            <span class="inline-block mx-4 text-xs font-medium text-gray-500">OR</span>
+                            <div class="h-px w-full bg-gray-200"></div>
+                        </div>
+
+                        <p class="text-sm text-center">
+                            <span class="mr-1 text-gray-500">Don’t have an account?</span>
+                            <a class="inline-block text-teal-500 hover:text-yellowGreen-600 font-semibold"
+                                href="{{ route('signup') }}">
+                                Sign Up
+                            </a>
+                        </p>
+                    </form>
                 </div>
             </div>
-        </section>
-
-    </div>
+        </div>
+    </section>
 </x-layouts.landingLayout>
