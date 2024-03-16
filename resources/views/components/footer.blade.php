@@ -32,7 +32,7 @@
                                 <li class="mb-6"><a class="inline-block text-lg text-gray-400 hover:text-white"
                                         href="#">Our Mission</a></li>
                                 <li class="flex items-center mb-6">
-                                    <a class="inline-block mr-2 text-lg text-gray-400 hover:text-white" href="#">
+                                    <a class="inline-block ltr:mr-2 rtl:ml-2 text-lg text-gray-400 hover:text-white" href="#">
                                         <span>Careers</span>
                                     </a>
                                     <span class="inline-flex h-6 px-2 items-center text-white bg-teal-600 rounded-full">

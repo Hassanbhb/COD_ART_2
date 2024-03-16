@@ -6,19 +6,21 @@
         </x-banner>
         {{-- Navigation --}}
         <x-navbar />
-        
+
         {{-- header --}}
         <div class="relative">
             <img class="hidden lg:block absolute top-0 right-0 w-full max-w-lg xl:max-w-xl"
                 src="{{ Vite::asset('resources/assets/headers/header-5-right.png') }}" alt="">
             <div class="container px-4 mx-auto">
-                <div class="max-w-sm sm:max-w-lg xl:max-w-2xl mx-auto lg:mx-0 lg:pt-10 lg:pr-10 pb-12 lg:pb-28">
-                    <h1 class="font-heading tracking-tight text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Start your
-                        ecommerce journey with less.</h1>
+                <div
+                    class="max-w-sm sm:max-w-lg xl:max-w-2xl ltr:lg:mr-auto rtl:lg:mr-auto lg:pt-10 lg:pr-10 pb-12 lg:pb-28">
+                    <h1 class="font-heading tracking-tight text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+                        Start your ecommerce journey with less.
+                    </h1>
                     <p class="max-w-sm xl:max-w-none text-lg text-gray-500 mb-10">Easily store, organize, and access
                         valuable assets from anywhere.</p>
                     <div class="flex flex-col xs:flex-row items-center mb-10">
-                        <a class="group relative flex xs:inline-flex w-full xs:w-auto mb-4 xs:mb-0 xs:mr-8 items-center justify-center px-5 h-12 font-bold text-white bg-gradient-to-br from-cyanGreen-800 to-cyan-800 rounded-lg transition-all duration-300"
+                        <a class="group relative flex xs:inline-flex w-full xs:w-auto mb-4 xs:mb-0 ltr:xs:mr-8 rtl:xs:ml-8 items-center justify-center px-5 h-12 font-bold text-white bg-gradient-to-br from-cyanGreen-800 to-cyan-800 rounded-lg transition-all duration-300"
                             href="#">
                             <div
                                 class="absolute top-0 left-0 w-full h-full rounded-lg ring-4 ring-green-300 animate-pulse group-hover:ring-0 transition duration-300">
