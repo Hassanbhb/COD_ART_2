@@ -34,7 +34,7 @@
             <div class="hidden lg:block ml-auto">
                 <a class="inline-flex items-center justify-center h-10 mr-4 px-4 text-center leading-loose text-sm text-gray-700 hover:text-yellowGreen-700 font-semibold transition duration-200"
                     href="{{ route('login') }}">Login</a><a
-                    class="inline-flex items-center justify-center h-10 px-4 text-center leading-loose text-sm text-gray-700 hover:text-yellowGreen-700 font-semibold border border-gray-200 hover:border-yellowGreen-600 shadow-sm hover:shadow-none rounded-lg transition duration-200"
+                    class="inline-flex items-center justify-center h-10 px-4 text-center leading-loose text-sm text-yellowGreen-50  bg-yellowGreen-600 hover:bg-yellowGreen-700 font-semibold border border-yellowGreen-700 shadow-sm hover:shadow-none rounded-lg transition duration-200"
                     href="{{ route('signup') }}">Get Started</a>
             </div>
         </div>
