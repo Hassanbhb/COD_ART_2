@@ -1,6 +1,6 @@
 <nav class="relative bg-white mb-12 md:mb-24">
     <div class="container mx-auto px-4">
-        <div class="relative flex h-24 items-center">
+        <div class="flex justify-between h-24 items-center">
             <a class="inline-block" href="{{ route('home') }}">
                 <img class="h-10" src="{{ Vite::asset('resources/assets/logos/aurora-logo.svg') }}" alt="">
             </a>
@@ -15,27 +15,26 @@
                     </path>
                 </svg>
             </button>
-            <div
-                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden lg:flex items-center">
-                <a class="inline-block hover:text-yellowGreen-700 mr-10" href="#">
+            <div class="flex items-center gap-10">
+                <a class="inline-block hover:text-yellowGreen-700" href="#">
                     <div class="flex items-center">
-                        <span class="mr-3">Product</span>
-                        <svg width="10" height="6" viewbox="0 0 10 6" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round"></path>
-                        </svg>
+                        Product
                     </div>
                 </a>
-                <a class="inline-block hover:text-yellowGreen-700 mr-10" href="#">Features</a><a
-                    class="inline-block hover:text-yellowGreen-700 mr-10" href="#">Pricing</a><a
+                <a class="inline-block hover:text-yellowGreen-700" href="#">Features</a><a
+                    class="inline-block hover:text-yellowGreen-700" href="#">Pricing</a><a
                     class="inline-block hover:text-yellowGreen-700" href="#">Resources</a>
             </div>
-            <div class="hidden lg:block ml-auto">
-                <a class="inline-flex items-center justify-center h-10 mr-4 px-4 text-center leading-loose text-sm text-gray-700 hover:text-yellowGreen-700 font-semibold transition duration-200"
-                    href="{{ route('login') }}">Login</a><a
+            <div class="hidden lg:block">
+                <a class="inline-flex items-center justify-center h-10 ltr:mr-4 rtl:ml-4 px-4 text-center leading-loose text-sm text-gray-700 hover:text-yellowGreen-700 font-semibold transition duration-200"
+                    href="{{ route('login') }}">
+                    Login
+                </a>
+                <a
                     class="inline-flex items-center justify-center h-10 px-4 text-center leading-loose text-sm text-yellowGreen-50  bg-yellowGreen-600 hover:bg-yellowGreen-700 font-semibold border border-yellowGreen-700 shadow-sm hover:shadow-none rounded-lg transition duration-200"
-                    href="{{ route('signup') }}">Get Started</a>
+                    href="{{ route('signup') }}">
+                    Get Started
+                </a>
             </div>
         </div>
     </div>
