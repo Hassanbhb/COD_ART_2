@@ -92,38 +92,34 @@
                     <p class="text-lg text-gray-200">Using our platform is easy and straightforward. Here's how it
                         works:</p>
                 </div>
-                <div class="flex flex-wrap -mx-4 md:-mx-6 items-center">
-                    <div class="w-full md:px-6 mb-16 lg:mb-0 lg:w-1/2">
-                        <div class="max-w-xs mx-auto lg:mx-0">
-                            <img class="block w-full mb-8"
-                                src="{{ Vite::asset('resources/assets/how-it-works/image-gradient-opacity-1.png') }}"
-                                alt="">
-                            <div class="flex">
-                                <div
-                                    class="flex-shrink-0 inline-flex w-8 h-8 items-center justify-center text-base font-bold text-white bg-white bg-opacity-10 rounded-full transition duration-200">
-                                    1</div>
-                                <div class="ml-3">
-                                    <h6 class="text-xl font-bold text-white mb-1">Sellers</h6>
-                                    <p class="text-lg text-gray-200">Create an account by simply setting up your email
-                                        and password.</p>
-                                </div>
+                <div class="flex flex-col lg:flex-row">
+                    <div class="flex flex-col items-center">
+                        <img class="w-1/2 mb-8"
+                            src="{{ Vite::asset('resources/assets/how-it-works/image-gradient-opacity-1.png') }}"
+                            alt="">
+                        <div class="flex w-1/2">
+                            <div
+                                class="flex-shrink-0 inline-flex w-8 h-8 items-center justify-center text-base font-bold text-white bg-white bg-opacity-10 rounded-full transition duration-200">
+                                1</div>
+                            <div class="ml-3">
+                                <h6 class="text-xl font-bold text-white mb-1">Sellers</h6>
+                                <p class="text-lg text-gray-200">Create an account by simply setting up your email
+                                    and password.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="w-full px-4 md:px-6 mb-16 lg:mb-0 lg:w-1/2">
-                        <div class="max-w-xs mx-auto lg:mx-0">
-                            <img class="block w-full mb-8"
-                                src="{{ Vite::asset('resources/assets/how-it-works/image-gradient-opacity-2.png') }}"
-                                alt="">
-                            <div class="flex">
-                                <div
-                                    class="flex-shrink-0 inline-flex w-8 h-8 items-center justify-center text-base font-bold text-white bg-white bg-opacity-10 rounded-full transition duration-200">
-                                    2</div>
-                                <div class="ml-3">
-                                    <h6 class="text-xl font-bold text-white mb-1">Affiliates</h6>
-                                    <p class="text-lg text-gray-200">Browse through our intuitive interface to discover
-                                        the features.</p>
-                                </div>
+                    <div class="flex flex-col items-center">
+                        <img class="w-1/2 mb-8"
+                            src="{{ Vite::asset('resources/assets/how-it-works/image-gradient-opacity-2.png') }}"
+                            alt="">
+                        <div class="flex w-1/2">
+                            <div
+                                class="flex-shrink-0 inline-flex w-8 h-8 items-center justify-center text-base font-bold text-white bg-white bg-opacity-10 rounded-full transition duration-200">
+                                2</div>
+                            <div class="ml-3">
+                                <h6 class="text-xl font-bold text-white mb-1">Affiliates</h6>
+                                <p class="text-lg text-gray-200">Browse through our intuitive interface to discover
+                                    the features.</p>
                             </div>
                         </div>
                     </div>
