@@ -34,7 +34,8 @@
                             <div class="flex items-center">
                                 <img class="block w-10 h-10 rounded-full"
                                     src="{{ Vite::asset('resources/assets/blog/avatar-medium.png') }}" alt="">
-                                <span class="ltr:ml-4 rtl:mr-4 text-sm font-medium">Responds in &amp;pr; 1-2 hours</span>
+                                <span class="ltr:ml-4 rtl:mr-4 text-sm font-medium">Responds in &amp;pr; 1-2
+                                    hours</span>
                             </div>
                         </div>
                     </div>
@@ -80,8 +81,8 @@
                                                     </select>
                                                 </div>
                                                 <input
-                                                    class="flex-1 py-2 ltr:pl-2 ltr:pr-4 h-full text-gray-500 placeholder-gray-500 border-0 bg-transparent  focus:border-yellowGreen-500 focus:ring-0"
-                                                    type="text" placeholder="+1 (555) 000-0000">
+                                                    class="flex-1 py-2 mr-1 px-0 h-full text-gray-500 placeholder-gray-500 border-0 bg-transparent  focus:border-yellowGreen-500 focus:ring-0"
+                                                    type="tel" placeholder="+1 (555) 000-0000">
                                             </div>
                                         </div>
                                     </div>
