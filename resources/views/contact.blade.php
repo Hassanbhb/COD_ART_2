@@ -34,7 +34,7 @@
                             <div class="flex items-center">
                                 <img class="block w-10 h-10 rounded-full"
                                     src="{{ Vite::asset('resources/assets/blog/avatar-medium.png') }}" alt="">
-                                <span class="ml-4 text-sm font-medium">Responds in &amp;pr; 1-2 hours</span>
+                                <span class="ltr:ml-4 rtl:mr-4 text-sm font-medium">Responds in &amp;pr; 1-2 hours</span>
                             </div>
                         </div>
                     </div>
@@ -43,14 +43,14 @@
                             <form action="">
                                 <div class="flex flex-col mb-8 items-center">
                                     <div class="flex w-full">
-                                        <div class="flex-1 md:w-1/2 pr-4 mb-4">
+                                        <div class="flex-1 md:w-1/2 ltr:pr-4 rtl:pl-4 mb-4">
                                             <label class="block mb-1 text-sm font-medium" for="">First
                                                 name</label>
                                             <input
                                                 class="py-2 px-4 h-11 w-full text-gray-500 placeholder-gray-500 bg-gray-50 bg-opacity-40 border border-gray-200 focus:border-yellowGreen-500 rounded-lg outline-none ring ring-transparent focus:ring-yellowGreen-500"
                                                 type="text" placeholder="First name">
                                         </div>
-                                        <div class="flex-1 md:w-1/2 pl-4 mb-4">
+                                        <div class="flex-1 md:w-1/2 ltr:pl-4 rtl:pr-4 mb-4">
                                             <label class="block mb-1 text-sm font-medium" for="">Last
                                                 name</label>
                                             <input
@@ -59,29 +59,28 @@
                                         </div>
                                     </div>
                                     <div class="flex w-full">
-                                        <div class="md:w-1/2 pr-4 mb-4">
+                                        <div class="md:w-1/2 ltr:pr-4 rtl:pl-4 mb-4">
                                             <label class="block mb-1 text-sm font-medium" for="">Email</label>
                                             <input
                                                 class="py-2 px-4 h-11 w-full text-gray-500 placeholder-gray-500 bg-gray-50 bg-opacity-40 border border-gray-200 focus:border-yellowGreen-500 rounded-lg outline-none ring ring-transparent focus:ring-yellowGreen-500"
                                                 type="email" placeholder="john@email.com">
                                         </div>
-                                        <div class="md:w-1/2 pl-4 mb-4">
+                                        <div class="md:w-1/2 ltr:pl-4 rtl:pr-4 mb-4">
                                             <label class="block mb-1 text-sm font-medium" for="">Phone
                                                 number</label>
                                             <div
-                                                class="flex h-11 bg-gray-50 bg-opacity-40 border border-gray-200 rounded-md">
-                                                <div class="relative">
+                                                class="flex flex-row-reverse h-11 bg-gray-50 bg-opacity-40 border border-gray-200 rounded-md">
+                                                <div class="">
                                                     <select
-                                                        class="relative z-10 pl-3 pr-6 h-full bg-transparent focus:outline-none appearance-none cursor-pointer border-transparent focus:border-transparent focus:ring-0"
+                                                        class="h-full bg-transparent focus:outline-none appearance-none cursor-pointer border-transparent focus:border-transparent focus:ring-0"
                                                         name="" id="">
                                                         <option value="">US</option>
                                                         <option value="">GB</option>
                                                         <option value="">EU</option>
                                                     </select>
-
                                                 </div>
                                                 <input
-                                                    class="py-2 pl-2 pr-4 h-full text-gray-500 placeholder-gray-500 border-0 bg-transparent  focus:border-yellowGreen-500 focus:ring-0"
+                                                    class="flex-1 py-2 ltr:pl-2 ltr:pr-4 h-full text-gray-500 placeholder-gray-500 border-0 bg-transparent  focus:border-yellowGreen-500 focus:ring-0"
                                                     type="text" placeholder="+1 (555) 000-0000">
                                             </div>
                                         </div>
