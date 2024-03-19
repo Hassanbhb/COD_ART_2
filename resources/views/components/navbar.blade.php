@@ -23,15 +23,14 @@
                 </a>
                 <a class="inline-block hover:text-yellowGreen-700" href="#">Features</a>
                 <a class="inline-block hover:text-yellowGreen-700" href="#">Pricing</a>
-                <a class="inline-block hover:text-yellowGreen-700" href="#">Resources</a>
+                <a class="inline-block hover:text-yellowGreen-700" href="{{ route('contact') }}">Contact</a>
             </div>
             <div class="hidden lg:block">
                 <a class="inline-flex items-center justify-center h-10 ltr:mr-4 rtl:ml-4 px-4 text-center leading-loose text-sm text-gray-700 hover:text-yellowGreen-700 font-semibold transition duration-200"
                     href="{{ route('login') }}">
                     Login
                 </a>
-                <a
-                    class="inline-flex items-center justify-center h-10 px-4 text-center leading-loose text-sm text-yellowGreen-50  bg-yellowGreen-600 hover:bg-yellowGreen-700 font-semibold border border-yellowGreen-700 shadow-sm hover:shadow-none rounded-lg transition duration-200"
+                <a class="inline-flex items-center justify-center h-10 px-4 text-center leading-loose text-sm text-yellowGreen-50  bg-yellowGreen-600 hover:bg-yellowGreen-700 font-semibold border border-yellowGreen-700 shadow-sm hover:shadow-none rounded-lg transition duration-200"
                     href="{{ route('signup') }}">
                     Get Started
                 </a>
