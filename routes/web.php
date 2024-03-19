@@ -37,3 +37,7 @@ Route::get('/affiliate/store', function () {
 Route::get('/affiliate/product', function () {
     return view('affiliate.product');
 })->name('affiliate.product');
+
+Route::get('/affiliate/cart', function () {
+    return view('affiliate.cart');
+})->name('affiliate.cart');
