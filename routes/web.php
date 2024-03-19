@@ -28,3 +28,12 @@ Route::get('/signup', function () {
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
+
+// affiliate routes
+Route::get('/affiliate/store', function () {
+    return view('affiliate.store');
+})->name('affiliate.store');
+
+Route::get('/affiliate/product', function () {
+    return view('affiliate.product');
+})->name('affiliate.product');
