@@ -81,7 +81,7 @@
                                                     </select>
                                                 </div>
                                                 <input
-                                                    class="flex-1 py-2 mr-1 px-0 h-full text-gray-500 placeholder-gray-500 border-0 bg-transparent  focus:border-yellowGreen-500 focus:ring-0"
+                                                    class="flex-1 py-2 rtl:mr-1 ltr:ml-1 px-0 h-full text-gray-500 placeholder-gray-500 border-0 bg-transparent  focus:border-yellowGreen-500 focus:ring-0"
                                                     type="tel" placeholder="+1 (555) 000-0000">
                                             </div>
                                         </div>
