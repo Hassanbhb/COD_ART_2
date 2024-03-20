@@ -53,3 +53,7 @@ Route::get('/affiliate/checkout', function () {
 Route::get('/affiliate/thankyou', function () {
     return view('affiliate.thankYouPage');
 })->name('affiliate.thankYouPage');
+
+Route::get('/affiliate/contact', function () {
+    return view('affiliate.contact');
+})->name('affiliate.contact');

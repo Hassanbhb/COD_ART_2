@@ -12,7 +12,7 @@
               contenteditable="false">
               Collections
           </a>
-          <a class="mx-5 font-base font-medium text-rhino-700 hover:text-rhino-400" href="#">
+          <a class="mx-5 font-base font-medium text-rhino-700 hover:text-rhino-400" href="{{ route('affiliate.contact') }}">
               Contact Us
           </a>
       </div>
