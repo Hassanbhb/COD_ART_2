@@ -45,3 +45,7 @@ Route::get('/affiliate/cart', function () {
 Route::get('/affiliate/checkout', function () {
     return view('affiliate.checkout');
 })->name('affiliate.checkout');
+
+Route::get('/affiliate/thankyou', function () {
+    return view('affiliate.thankYouPage');
+})->name('affiliate.thankYouPage');
