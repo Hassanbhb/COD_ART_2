@@ -73,7 +73,7 @@
     {{-- products --}}
     <section class="py-12 md:py-10 lg:py-10">
         <div class="max-w-7xl px-4 mx-auto">
-            <h2 class="text-4xl text-center font-heading font-semibold text-rhino-600 tracking-xs mb-1">PROMOTIONS</h2>
+            <h2 class="text-4xl text-center font-heading font-semibold text-rhino-600 tracking-xs mb-1">Featured Products</h2>
             <p class="text-xs text-center mb-14">Find everything you want</p>
             {{-- cards --}}
             <div class="flex flex-wrap -mx-4 -mb-8">
@@ -205,6 +205,6 @@
     </section>
 
     {{-- footer --}}
-    
+    <x-store.footer />
 
 </x-layouts.landingLayout>
