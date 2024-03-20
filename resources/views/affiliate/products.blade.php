@@ -3,10 +3,35 @@
 
     <section class="py-12 md:py-10 lg:py-24">
         <div class="max-w-7xl px-4 mx-auto">
-            <h2 class="text-4xl text-center font-heading font-semibold text-rhino-600 tracking-xs">OUR PRODUCTS
-            </h2>
+            <div class="flex justify-between">
+                <h2 class="text-4xl font-heading font-semibold text-rhino-600 tracking-xs">Category one</h2>
+                <div class="flex gap-5">
+                    <span class="flex items-center font-medium">Sorted by:</span>
+                    <div class="flex gap-4 items-center text-rhino-400">
+                        <span class="flex gap-1 items-center text-sm cursor-pointer">Price
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-3 h-3">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </span>
+                        <span class="flex gap-1 items-center text-sm cursor-pointer">Newest
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </span>
+                        <span class="flex gap-1 items-center text-sm cursor-pointer">A-Z
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
             {{-- cards --}}
-            <div class="flex flex-wrap -mx-4 -mb-8 mt-14">
+            <div class="flex flex-wrap -mx-4 -mb-8 mt-10">
                 <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
                     <div class="block max-w-sm md:max-w-none mx-auto">
                         <div class="flex items-end justify-end h-60 mb-4 bg-coolGray-100 rounded-xl overflow-hidden">
