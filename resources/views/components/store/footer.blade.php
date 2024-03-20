@@ -2,19 +2,19 @@
     <div class="container mx-auto py-16 px-4">
         <img class="block mb-8 mx-auto" src="{{ Vite::asset('resources/assets/logos/logo-coleos-2.svg') }}" alt="">
         <div class="flex flex-wrap justify-center items-center gap-10 mb-8">
-            <a href="#">
+            <a href="{{ route('affiliate.store') }}">
                 <div class="flex items-center gap-1 group">
                     <span
                         class="text-rhino-700 font-bold text-sm group-hover:text-rhino-800 transition duration-200">Home</span>
                 </div>
             </a>
-            <a href="#">
+            <a href="{{ route('affiliate.products') }}">
                 <div class="flex items-center gap-1 group">
                     <span
                         class="text-rhino-700 font-bold text-sm group-hover:text-rhino-800 transition duration-200">Collections</span>
                 </div>
             </a>
-            <a href="#">
+            <a href="{{ route('affiliate.contact') }}">
                 <div class="flex items-center gap-1 group">
                     <span
                         class="text-rhino-700 font-bold text-sm group-hover:text-rhino-800 transition duration-200">Contact
