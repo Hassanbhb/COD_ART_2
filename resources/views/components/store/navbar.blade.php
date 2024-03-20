@@ -8,7 +8,7 @@
               contenteditable="false">
               Home
           </a>
-          <a class="mx-5 font-base font-medium text-rhino-700 hover:text-rhino-400" href="#"
+          <a class="mx-5 font-base font-medium text-rhino-700 hover:text-rhino-400" href="{{ route('affiliate.products') }}"
               contenteditable="false">
               Collections
           </a>

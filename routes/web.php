@@ -38,6 +38,10 @@ Route::get('/affiliate/product', function () {
     return view('affiliate.product');
 })->name('affiliate.product');
 
+Route::get('/affiliate/products', function(){
+    return view('affiliate.products');
+})->name('affiliate.products');
+
 Route::get('/affiliate/cart', function () {
     return view('affiliate.cart');
 })->name('affiliate.cart');
